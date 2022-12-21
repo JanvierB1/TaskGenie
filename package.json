@@ -1,24 +1,30 @@
 {
-  "name": "job-quest",
+  "name": "taskgenie",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "db.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JanvierB1/Job-Quest.git"
+    "url": "git+https://github.com/JanvierB1/taskgenie.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JanvierB1/Job-Quest/issues"
+    "url": "https://github.com/JanvierB1/taskgenie/issues"
   },
-  "homepage": "https://github.com/JanvierB1/Job-Quest#readme",
+  "homepage": "https://github.com/JanvierB1/taskgenie#readme",
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

@@ -3,9 +3,6 @@
 module.exports = {
     up: async (queryInterface, Sequelize) => {
 
-
-
-
         await queryInterface.createTable('users', { 
             id:{
             type:Sequelize.INTEGER(50),
@@ -30,7 +27,7 @@ module.exports = {
         },
         createdAt:Sequelize.DATE,
         updatedAt:Sequelize.DATE
-     })
+     });
 
     },
 

@@ -1,5 +1,7 @@
 const express = require('express');
+const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
+
 const app = express();
 const port = process.env.PORT|| 3000;
 const router = require('./src/routes/index');
@@ -10,6 +12,12 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use('/', router)
 
-app.listen(port, ()=>{
-    console.log(`The server is listening to port ${port}`)
-});
+app.get('/', (req,res)=> { 
+    res.render('homePage')
+
+})
+
+
+app.listen(port, () => {
+    console.log('Server listening on: http://localhost:' + port);
+  });

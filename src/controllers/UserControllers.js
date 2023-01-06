@@ -28,10 +28,25 @@ const saveUser =  async (req,res)=>{
 }
 
 const editUser = async (req, res)=>{
-
-    res.render('edit')
+    const {id} = await req.params;
+    const user = await User.findOne({
+        where{
+            id:id
+        },
+        raw:true
+    }).catch(error=>console.log(error))
+    res.render('edit', {user})
 }
 
+const updateUser = async (req, res)=>{
+    const {id} = req.params;
+    const data = req.body;
+    const select = {where:{id:id}}
+
+    await User.update(data, selector).catch(error=>console.log(error))
+
+    res.redirect('/')
+}
 module.exports = {
     allusers, userForm, saveUser,editUser
 }

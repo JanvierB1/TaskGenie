@@ -2,7 +2,10 @@ const User = require('../models/User');
 const user = require('../models/User');
 
 const allusers =  async (req,res)=>{
-    await res.render('homePage');
+    const users = await User.findAll({
+        raw:true
+    }).catch(error=>console.log(error))
+    await res.render('homePage', {users});
 }
 
 const userForm =  async (req,res)=>{
@@ -24,7 +27,12 @@ const saveUser =  async (req,res)=>{
     await res.render('createUser');
 }
 
+const editUser = async (req, res)=>{
+
+    res.render('edit')
+}
+
 module.exports = {
-    allusers, userForm, saveUser
+    allusers, userForm, saveUser,editUser
 }
     

@@ -11,16 +11,18 @@
     </tr>
   </thead>
   <tbody>
+    {{#each users}}
     <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.phone}}</td>
       <td>
         <a class= "btn btb-primary" href="#">View</a>
-        <a class= "btn btb-success" href="#">Edit</a>
+        <a class= "btn btb-success" href="/edit/{{this.id}}">Edit</a>
         <a class= "btn btb-danger" href="#">Delete</a>
       </td>
     </tr>
+    {{/each}}
   </tbody>
 </table>

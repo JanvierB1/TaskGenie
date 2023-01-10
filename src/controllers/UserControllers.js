@@ -1,15 +1,15 @@
 const User = require('../models/User');
-const user = require('../models/User');
+// const user = require('../models/User');
 
 const allusers =  async (req,res)=>{
     const users = await User.findAll({
         raw:true
     }).catch(error=>console.log(error))
-    await res.render('homePage', {users});
+    await res.render('home', {users});
 }
 
 const userForm =  async (req,res)=>{
-    await res.render('createUser');
+    await res.render('create');
 }
 
 const saveUser =  async (req,res)=>{

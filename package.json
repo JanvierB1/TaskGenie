@@ -2,7 +2,7 @@
   "name": "taskgenie",
   "version": "1.0.0",
   "description": "",
-  "main": "db.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
   },

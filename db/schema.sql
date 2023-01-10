@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS taskgenie_db;
-
-CREATE DATABASE taskgenie_db;
+DROP DATABASE IF EXISTS user_db;
+CREATE DATABASE user_db;

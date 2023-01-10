@@ -13,7 +13,9 @@ To install the dependencies , run this command:
 npm i
 ```
 ## Screenshots
- 
+<img width="923" alt="Screenshot 2023-01-09 at 3 20 00 PM" src="https://user-images.githubusercontent.com/112514096/211432858-86537f0d-3f13-424b-a34a-d8babab9f36e.png%22%3E">
+
+<img width="686" alt="Screenshot 2023-01-09 at 3 50 35 PM" src="https://user-images.githubusercontent.com/112514096/211432927-fcbb54f2-af76-4850-ad6c-1a960d30c564.png%22%3E">
 
  
 ## Description

@@ -5,7 +5,7 @@
 * [Description](#description)
 * [Technologies](#technologies)
 * [Usage](#usage)
-* [License]
+* [License](#license)
 * [Credit](#credits)
 ## Installation
 To install the dependencies , run this command:
@@ -15,7 +15,7 @@ npm i
 ## Screenshots
  
 
- 
+
 ## Description
 Task Genie is a task manager web application that allows users to create a profile and create, edit,and delete tasks as you complete them. The user can also add due date, name, description to the task.
 
@@ -30,5 +30,5 @@ MIT (https://choosealicense.com/licenses/mit/)
 
 ## Credits
 Nataly Rodriguez
-Janiver Barreto
+Janvier Barreto
 Michael Mclane

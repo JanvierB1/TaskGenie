@@ -26,3 +26,31 @@
     {{/each}}
   </tbody>
 </table>
+<h1>Task Genie</h1>
+<a class = "btn btn-primary mb-1" href="/create">Create User</a>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Decription</th>
+      <th scope="col">Date Due</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.phone}}</td>
+      <td>
+        <a class= "btn btb-primary" href="#">View</a>
+        <a class= "btn btb-success" href="/edit/{{this.id}}">Edit</a>
+        <a class= "btn btb-danger" href="#">Delete</a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
